@@ -47,9 +47,9 @@ Optimizer
 Having said all that, the first thing that we'll need to test our strategies is some data.
 Let's use Oracle's stock prices for year 2000, which we'll download with the following command: ::
 
-    python -c "from pyalgotrade.tools import yahoofinance; yahoofinance.download_daily_bars('orcl', 2000, 'orcl-2000.csv')"
+    python -c "from pyalgotrade.tools import googlefinance; googlefinance.download_daily_bars('orcl', 2000, 'orcl-2000.csv')"
 
-The pyalgotrade.tools.yahoofinance package downloads CSV formatted data from Yahoo! Finance. 
+The pyalgotrade.tools.googlefinance package downloads CSV formatted data from Yahoo! Finance. 
 The orcl-2000.csv file should look like this: ::
 
     Date,Open,High,Low,Close,Volume,Adj Close
